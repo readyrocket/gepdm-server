@@ -12,6 +12,8 @@
     "lint": "eslint '*/**/*. {ts, tsx}' --quiet --fix",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
 		"typeorm:create": "yarn typeorm migration:create -n",
+		"typeorm:revert": "yarn typeorm migration:revert",
+		"typeorm:run": "yarn typeorm migration:run",
     "start": "node --experimental-modules dist/app.js",
     "build": "tsc"
   },

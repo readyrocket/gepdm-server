@@ -27,6 +27,7 @@ rules:
     array-callback-return: "error",
     operator-linebreak: [2, "before", { overrides: { "?": "after" } }],
     block-scoped-var: "error",
+    camelcase: 'off',
     eqeqeq: ["error", "always"],
     no-tabs: "off",
     max-len: [2, { code: 200, tabWidth: 2 }],
