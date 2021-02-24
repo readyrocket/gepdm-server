@@ -9,7 +9,7 @@ const RegisterClient = async (req: Request, res: Response) => {
   try {
     const db = getRepository(Client);
 
-    const { name, email, password } = await req.body;
+    const { name, email, password, privacy_policy } = await req.body;
 
     const findUser = await db.find({ where: { email } });
 
@@ -24,6 +24,7 @@ const RegisterClient = async (req: Request, res: Response) => {
       name,
       email,
       password: passwordHashed,
+      privacy_policy,
     };
 
     const user = db.create(userData);

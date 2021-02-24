@@ -14,6 +14,9 @@ class Users {
 	@Column()
 	password: string;
 
+	@Column()
+	privacy_policy: boolean;
+
 	@CreateDateColumn({ type: `timestamp`, name: `createdAt` })
 	createdAt: Date;
 }
